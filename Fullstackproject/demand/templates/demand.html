@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+{%load static%}
+<link rel="stylesheet" href="{% static 'demand/css/demand.css' %}">
+<header>
+    <p><img src="{%static 'demand/img/logo.png'%}"></p>
+</header>
+<body>
+<div class="pagewrapper">
+  <div class="container">
+      <p>Навигация</p>
+    <nav>
+      <ul>
+        <li><a href="/home/">Главная</a></li>
+        <li><a href="">Востребованность</a></li>
+        <li><a href="/geography/">География</a></li>
+      </ul>
+    </nav>
+  </div>
+
+<div class="text" >
+    <h1>Востребованность</h1>
+    <h2 style="text-align:center; border-bottom:10px solid black;">Все вакансии</h2>
+    <div class="allJobs">
+        <h2 class="hleft">Динамика уровня зарплат по годам</h2>
+        <h2 class ="hright">Динамика количества вакансий по годам</h2>
+    </div>
+    <div class = allJobs>
+        <p ><img src="{%static 'demand/img/AllJobsdynamics.png'%}"> </p>
+        <p ><img src="{%static 'demand/img/AllJobsVacs.png'%}"> </p>
+    </div>
+
+
+    <table class = 'firsttable'>
+        <thead>
+        <th>
+        {% for el in years%}
+            <td class = 'tdst'>{{el}}</td>
+            {%endfor%}
+        </th>
+        </thead>
+        <tr>
+
+        </tr>
+        <tr>
+            <td class = 'tdst'>Средняя зарплата</td>
+            {% for el in avgSal%}
+            <td class = 'tdst'>{{el}}</td>
+            {%endfor%}
+
+        </tr>
+                <tr>
+                    <td class = 'tdst'>Кол-во вакансий</td>
+                    {{% for el in vacArr%}
+                    <td class = 'tdst'>{{el}}</td>
+                    {%endfor%}
+        </tr>
+    </table>
+
+    <h2 style="text-align:center;border-bottom:10px solid black;">Full-Stack разработчик</h2>
+        <div class="allJobs">
+        <h2 class="hleft">Динамика уровня зарплат по годам</h2>
+        <h2 class ="hright">Динамика количества вакансий по годам</h2>
+    </div>
+        <div class = allJobs>
+        <p ><img src="{%static 'demand/img/Full-StackSalary.png'%}"> </p>
+        <p ><img src="{%static 'demand/img/Full-StackVacs.png'%}"> </p>
+    </div>
+        <table class = 'firsttable'>
+        <thead>
+        <th>
+        {% for el in fYears%}
+            <td class = 'tdst'>{{el}}</td>
+            {%endfor%}
+        </th>
+        </thead>
+        <tr>
+
+        </tr>
+        <tr>
+            <td class = 'tdst'>Средняя зарплата</td>
+            {% for el in fSal%}
+                <td class = 'tdst'>{{el}}</td>
+            {%endfor%}
+        </tr>
+                <tr>
+            <td class = 'tdst'>Кол-во вакансий</td>
+            {% for el in fVac%}
+                <td class = 'tdst'>{{el}}</td>
+            {%endfor%}
+        </tr>
+    </table>
+</div>
+</div>
+</body>
+
+
+
+<footer>Кошеленко Иван Денисович <РИ-210942></РИ-210942></footer>
+</html>
+
+

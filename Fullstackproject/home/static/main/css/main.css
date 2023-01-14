@@ -1,0 +1,34 @@
+.header1 {
+    border-left: 10px solid;
+    border-right: 10px solid;
+    background-color: #f2fa9d;
+    text-align: center;
+}
+
+.text{
+    background-color: #f1f1f1;
+    width: 90%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.container{
+    width: 10%;
+    border-right: 10px solid;
+    background-color: #f1f1f1;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+.pagewrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.compul{
+    border-left: 10px solid;
+    background-color: #287f12;
+}
