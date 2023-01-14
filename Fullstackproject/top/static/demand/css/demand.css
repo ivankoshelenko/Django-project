@@ -38,19 +38,7 @@ table{
     border-collapse: collapse;
     border-spacing: 2px;
     width: 100%;
-    display: inline-block;
-	vertical-align: top;
-	max-width: 100%;
-	overflow-x: auto;
-	white-space: nowrap;
-	-webkit-overflow-scrolling: touch;
-}
-
-
-}
-.scroll-table{
-	overflow: auto;
-	position: relative;
+    margin: 30px;
 }
 td{
     border: 1px solid  black;
@@ -69,20 +57,8 @@ td{
     static:left;
 }
 .hright{
-    padding: 0 75px;
+    padding: 0 100px;
 }
 .hleft{
-    padding: 0 75px;
-}
-.bigimg{
-    display: flex;
-    justify-content: space-between;
-    width:50%;
-    height:50%;
-}
-.bigimgage{
-    display: flex;
-    justify-content: space-between;
-    width:100px%;
-
+    padding: 0 100px;
 }

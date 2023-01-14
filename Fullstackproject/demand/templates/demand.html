@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Востребованность</title>
 </head>
 
 {%load static%}
@@ -19,6 +19,8 @@
         <li><a href="/home/">Главная</a></li>
         <li><a href="">Востребованность</a></li>
         <li><a href="/geography/">География</a></li>
+          <li><a href="/top10/">Топ-10 навыков</a></li>
+        <li><a href="/sign/logout">Выйти из аккаунта</a></li>
       </ul>
     </nav>
   </div>
@@ -35,7 +37,7 @@
         <p ><img src="{%static 'demand/img/AllJobsVacs.png'%}"> </p>
     </div>
 
-
+    <div class=" scroll=">
     <table class = 'firsttable'>
         <thead>
         <th>
@@ -61,6 +63,7 @@
                     {%endfor%}
         </tr>
     </table>
+    </div>
 
     <h2 style="text-align:center;border-bottom:10px solid black;">Full-Stack разработчик</h2>
         <div class="allJobs">

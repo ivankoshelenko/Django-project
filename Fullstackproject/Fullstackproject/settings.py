@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'home',
     'demand',
     'geography',
+    'SignIn',
+    'top',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +81,7 @@ WSGI_APPLICATION = 'Fullstackproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'DataBase.sqlite3',
     }
 }
 
